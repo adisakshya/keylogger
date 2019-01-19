@@ -14,13 +14,13 @@ keylogger requires:
   1. python 3x
   2. pynput
 
-# Step 1: 
+### Step 1: 
 Download the repository using github or git eg.git clone https://github.com/adisakshya/keylogger
 
-# Step 2: 
+### Step 2: 
 Install the modules by running `python -m pip install requirements.txt`
 
-### How to run it?
+## How to run it?
 
 To run it just type `keylogger-windows` and it'll run:
 ```
@@ -28,10 +28,11 @@ keylogger-windows
 ```
 
 The keylogger is now running! It will log your strokes to the file you
-specified. Stop it by hitting the `Esc key`.
+specified in the script. 
+Stop it by hitting the `Esc key`.
 
 ---
-#### Uses
+### Uses
 
 Some uses of a keylogger are:
 
@@ -42,6 +43,12 @@ Some uses of a keylogger are:
 - Self analysis
 
 ---
+### To-Do
+  1. keylogger for mac
+  2. keylogger for linux
+  3. Make the keylogger undetectable
+  4. mouselogger
+
 
 Feel free to contribute to fix any problems, or to submit an issue!
 
