@@ -56,6 +56,6 @@ Please note, this repo is for educational purposes only. No contributors, major 
 
 Don't really understand licenses or tl;dr? Check out the [MIT license summary](https://tldrlegal.com/license/mit-license).
 
-Distributed under the MIT license. See [LICENSE](https://github.com/adisakshya/Keylogger/blob/master/LICENSE.txt) for more information.
+Distributed under the MIT license. See [LICENSE](https://github.com/adisakshya/keylogger/blob/master/LICENSE) for more information.
 
 Adisakshya – [Website](https://adisakshya.github.io)
