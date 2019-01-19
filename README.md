@@ -20,6 +20,9 @@ Download the repository using github or git eg.git clone https://github.com/adis
 ### Step 2: 
 Install the modules by running `python -m pip install requirements.txt`
 
+### Step 3: 
+Install the script by running `python setup.py install`
+
 ## How to run it?
 
 For keystroke logging just type `keylogger-windows`:
