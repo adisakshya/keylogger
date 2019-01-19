@@ -15,7 +15,7 @@ keylogger requires:
   2. pynput
 
 # Step 1: 
-Download the repository using github or git eg.git clone https://github.com/xp4xbox/Puffader
+Download the repository using github or git eg.git clone https://github.com/adisakshya/keylogger
 
 # Step 2: 
 Install the modules by running `python -m pip install requirements.txt`
@@ -24,7 +24,7 @@ Install the modules by running `python -m pip install requirements.txt`
 
 To run it just type `keylogger-windows` and it'll run:
 ```
-keylogger
+keylogger-windows
 ```
 
 The keylogger is now running! It will log your strokes to the file you
