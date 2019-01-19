@@ -22,7 +22,7 @@ Install the modules by running `python -m pip install requirements.txt`
 
 ## How to run it?
 
-To run it just type `keylogger-windows` and it'll run:
+For keystroke logging just type `keylogger-windows`:
 ```
 keylogger-windows
 ```
@@ -30,6 +30,11 @@ keylogger-windows
 The keylogger is now running! It will log your strokes to the file you
 specified in the script. 
 Stop it by hitting the `Esc key`.
+
+For mouse-clicks logging just type `mouselogger-windows`:
+```
+mouselogger-windows
+```
 
 ---
 ### Uses
@@ -47,7 +52,6 @@ Some uses of a keylogger are:
   1. keylogger for mac
   2. keylogger for linux
   3. Make the keylogger undetectable
-  4. mouselogger
 
 
 Feel free to contribute to fix any problems, or to submit an issue!
