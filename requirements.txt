@@ -1,3 +1,2 @@
 pynput
 setuptools
-distutils
