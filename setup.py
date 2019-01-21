@@ -1,19 +1,22 @@
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+import setuptools
 
-config = {
-    'description': 'keylogger',
-    'author': 'Adisakshya Chauhan',
-    'url': 'https://github.com/adisakshya/keylogger',
-    'download_url': 'https://github.com/adisakshya/keylogger',
-    'author_email': 'adisakshya98@gmail.com',
-    'version': '1.0',
-    'install_requires': ['pynput', 'setuptools', 'distutils'],
-    'packages': ['pynput', 'logging'],
-    'scripts': ['bin/keylogger-windows.py', 'bin/mouselogger-windows.py'],
-    'name': 'keylogger'
-    }
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
-setup(**config)
+setuptools.setup(
+    name="keylogger",
+    version="1.0.0",
+    author="Adisakshya Chauhan",
+    author_email="adisakshya98@gmail.com",
+    description="An opensource, key stroke logging application for windows, also capable of capturing mouse window clicks.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/adisakshya/keylogger",
+    packages=setuptools.find_packages(),
+    scripts=['bin/keylogger-windows.py','bin/mouselogger-windows.py'],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+)
