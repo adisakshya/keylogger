@@ -18,7 +18,7 @@ keylogger requires:
 Download the repository using github or git eg.git clone https://github.com/adisakshya/keylogger
 
 ### Step 2: 
-Install the modules by running `python -m pip install requirements.txt`
+Install the modules by running `pip install -r requirements.txt`
 
 ### Step 3: 
 Install the script by running `python setup.py install`
@@ -26,18 +26,18 @@ Install the script by running `python setup.py install`
 ---
 ## How to run it?
 
-For keystroke logging just type `keylogger-windows`:
+For keystroke logging just type:
 ```
-keylogger-windows
+keylogger-windows.py
 ```
 
 The keylogger is now running! It will log your strokes to the file you
 specified in the script. 
 Stop it by hitting the `Esc key`.
 
-For mouse-clicks logging just type `mouselogger-windows`:
+For mouse-clicks logging just type:
 ```
-mouselogger-windows
+mouselogger-windows.py
 ```
 
 ---
