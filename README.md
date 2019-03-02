@@ -41,6 +41,13 @@ mouselogger-windows.py
 ```
 
 ---
+## Example Logs
+
+Keyboard Logs: [key_log.txt](https://github.com/adisakshya/keylogger/blob/master/examples/keyboard_log_example/key_log.txt)
+
+Mouse Logs: [mouse_log.txt](https://github.com/adisakshya/keylogger/blob/master/examples/mouse_log_example/mouse_log.txt)
+
+---
 ### Uses
 
 Some uses of a keylogger are:
