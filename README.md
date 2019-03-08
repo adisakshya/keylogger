@@ -1,4 +1,4 @@
-# A simple keylogger for Windows
+# A keylogger for Windows
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
 
 Welcome to the keylogger repo! 
@@ -26,19 +26,25 @@ Install the script by running `python setup.py install`
 ---
 ## How to run it?
 
-For keystroke logging just type:
-```
-keylogger-windows.py
-```
+### Step 1:
 
-The keylogger is now running! It will log your strokes to the file you
-specified in the script. 
-Stop it by hitting the `Esc key`.
+copy the server.py file from bin/server.py to the desired directory you want to transfer the logs to.
+and run
+```
+py server.py
+```
+This will activate the server.
 
-For mouse-clicks logging just type:
+### Step 2:
+
+Run following command to activate the keylogger
 ```
-mouselogger-windows.py
+py logger.py
 ```
+This will activate the logger, and it will start logging keyboard strokes and mouse-clicks.
+
+As soon as the user press the "ESC" key, the logger sends the files to the remote server active in another directory
+and logs are transfered.
 
 ---
 ## Example Logs
