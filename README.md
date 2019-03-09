@@ -9,6 +9,7 @@ A keylogger is a program that records your keystrokes, and this program saves th
 
 Currently, there is one keylogger program for one of the major operating systems; Windows.
 
+---
 ## Windows Installation
 keylogger requires:
   1. python 3X
