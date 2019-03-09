@@ -11,7 +11,7 @@ Currently, there is one keylogger program for one of the major operating systems
 
 ## Windows Installation
 keylogger requires:
-  1. python 3x
+  1. python 3X
   2. pynput
 
 ### Step 1: 
@@ -37,14 +37,20 @@ This will activate the server.
 
 ### Step 2:
 
-Run following command to activate the keylogger
+Run following command to activate the key-logger
 ```
-py logger.py
+py key_logger.py
 ```
-This will activate the logger, and it will start logging keyboard strokes and mouse-clicks.
+
+Run following command to activate the mouse-logger
+```
+py mouse_logger.py
+```
+
+This will activate the logger, and it will start logging keyboard strokes and mouse-clicks in two separate log files (txt).
 
 As soon as the user press the "ESC" key, the logger sends the files to the remote server active in another directory
-and logs are transfered.
+and logs are transfered into one server copy of logs (txt).
 
 ---
 ## Example Logs
@@ -52,6 +58,8 @@ and logs are transfered.
 Keyboard Logs: [key_log.txt](https://github.com/adisakshya/keylogger/blob/master/examples/keyboard_log_example/key_log.txt)
 
 Mouse Logs: [mouse_log.txt](https://github.com/adisakshya/keylogger/blob/master/examples/mouse_log_example/mouse_log.txt)
+
+Server Logs: [server_copyg.txt](https://github.com/adisakshya/keylogger/blob/keylogger_v2.0_patch_1/examples/server_copy_of_logs_example/server_copy_of_logs.txt)
 
 ---
 ### Uses
