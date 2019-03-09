@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/adisakshya/keylogger",
     packages=setuptools.find_packages(),
-    scripts=['bin/logger.py'],
+    scripts=['bin/key_logger.py', 'bin/mouse_logger.py'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
