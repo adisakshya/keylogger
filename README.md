@@ -1,5 +1,6 @@
 # A keylogger for Windows
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
+[![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=2.0.0&x2=0)](http://badge.fury.io/gh/boennemann%2Fbadges)
 
 Welcome to the keylogger repo! 
 
@@ -20,9 +21,6 @@ Download the repository using github or git eg.git clone https://github.com/adis
 
 ### Step 2: 
 Install the modules by running `pip install -r requirements.txt`
-
-### Step 3: 
-Install the script by running `python setup.py install`
 
 ---
 ## How to run it?
@@ -75,9 +73,10 @@ Some uses of a keylogger are:
 
 ---
 ### To-Do
-  1. keylogger for mac
-  2. keylogger for linux
-  3. Make the keylogger undetectable
+  1. create setup file for v2.0
+  2. keylogger for mac
+  3. keylogger for linux
+  4. Make the keylogger undetectable
 
 
 Feel free to contribute to fix any problems, or to submit an issue!
