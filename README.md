@@ -59,7 +59,7 @@ Keyboard Logs: [key_log.txt](https://github.com/adisakshya/keylogger/blob/master
 
 Mouse Logs: [mouse_log.txt](https://github.com/adisakshya/keylogger/blob/master/examples/mouse_log_example/mouse_log.txt)
 
-Server Logs: [server_copyg.txt](https://github.com/adisakshya/keylogger/blob/keylogger_v2.0_patch_1/examples/server_copy_of_logs_example/server_copy_of_logs.txt)
+Server Logs: [server_copy.txt](https://github.com/adisakshya/keylogger/blob/keylogger_v2.0_patch_1/examples/server_copy_of_logs_example/server_copy_of_logs.txt)
 
 ---
 ### Uses
