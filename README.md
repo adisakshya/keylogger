@@ -34,6 +34,9 @@ py server.py
 ```
 This will activate the server.
 
+#### NOTE: 
+hostname and port number in the "server.py" and "client.py" file can be edited to send it to                                            some other server other than localhost:9999</b>
+
 ### Step 2:
 
 Run following command to activate the key-logger
