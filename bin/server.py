@@ -7,7 +7,7 @@ s = socket.socket()
 s.bind(("localhost",9999))  # edit hostname and port here
 s.listen(10)
 
-    print('listening on port: 9999')    # edit port here
+print('listening on port: 9999')    # edit port here
 while True:
     sc, address = s.accept()
 
