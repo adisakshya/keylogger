@@ -1,9 +1,10 @@
 # Import required modules
 import logging
 from pynput.mouse import Listener
+import os
 
 # Path to directory for storing mouselogs - User home (~) directory
-log_dir = "~/"
+log_dir =os.path.expanduser("~/")
 
 logging.basicConfig(filename=(log_dir + "mouse_log.txt"), level=logging.DEBUG, format='["%(asctime)s", %(message)s]')
 
