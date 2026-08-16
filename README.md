@@ -82,7 +82,7 @@ Some uses of a keylogger are:
   4. Make the keylogger undetectable
 
 
-Feel free to contribute to fix any problems, or to submit an issue!
+Feel free to contribute to fix any problems, or to submit an issue! See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance.
 
 Please note, this repo is for educational purposes only. No contributors, major or minor, are to fault for any actions done by this program.
 
