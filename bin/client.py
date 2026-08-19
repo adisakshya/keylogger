@@ -1,5 +1,4 @@
 import socket
-import sys
 import os
 
 log_dir=os.path.expanduser("~/")

