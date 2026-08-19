@@ -34,8 +34,26 @@ py server.py
 ```
 This will activate the server.
 
-#### NOTE: 
-hostname and port number in the "server.py" and "client.py" file can be edited to send it to                                            some other server other than localhost:9999</b>
+The server and client use `localhost:9999` by default. You can configure the
+host and port with command-line arguments:
+
+```
+py server.py --host 0.0.0.0 --port 8000
+py client.py --host 192.168.1.10 --port 8000
+```
+
+You can also set the `KEYLOGGER_HOST` and `KEYLOGGER_PORT` environment
+variables. For example, on Windows Command Prompt:
+
+```
+set KEYLOGGER_HOST=192.168.1.10
+set KEYLOGGER_PORT=8000
+py key_logger.py
+```
+
+Command-line arguments take precedence over environment variables. The
+environment variables are also used when `key_logger.py` sends the logs after
+the ESC key is released.
 
 ### Step 2:
 

